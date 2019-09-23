@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.reportCreation.orderReport.OrderReportController">
+  <tabs>
+    <Tab text="Create new">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ComboBox id="reportTypeBox" fx:id="reportTypeBox" layoutX="14.0" layoutY="57.0" onAction="#OnSelected" prefHeight="40.0" prefWidth="341.0" promptText="Select a report type" />
+                  <Text layoutX="35.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report type:" />
+                  <TextField fx:id="CNReportName" layoutX="17.0" layoutY="155.0" prefHeight="27.0" prefWidth="335.0" promptText="Enter a name" />
+                  <Text layoutX="26.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report name:" />
+                  <TextArea fx:id="reportDescription" layoutX="17.0" layoutY="240.0" prefHeight="92.0" prefWidth="381.0" promptText="Enter a description" />
+                  <Text layoutX="17.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report description:" />
+                  <Button fx:id="CNCreate" layoutX="446.0" layoutY="195.0" mnemonicParsing="false" onAction="#CreateNewReport" prefHeight="44.0" prefWidth="91.0" text="Create" />
+                  <ImageView fx:id="reportCNImage" fitHeight="155.0" fitWidth="250" layoutX="365.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="resources/tanjiro.jpg" />
+                     </image></ImageView>
+                  <Button fx:id="CNRClear" layoutX="446.0" layoutY="286.0" mnemonicParsing="false" onAction="#ClearNewReport" prefHeight="44.0" prefWidth="91.0" text="Clear" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Existing reporting">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="erTable" layoutX="14.0" layoutY="102.0" prefHeight="236.0" prefWidth="427.0">
+                     <columns>
+                        <TableColumn fx:id="erDateColumn" prefWidth="85.0" text="Date" />
+                        <TableColumn fx:id="erNameColumn" prefWidth="183.0" text="Name" />
+                        <TableColumn fx:id="erTypeColumn" prefWidth="158.0" text="Type" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="erOpen" layoutX="460.0" layoutY="102.0" mnemonicParsing="false" onAction="#openReport" prefHeight="38.0" prefWidth="105.0" text="Open" />
+                  <Button fx:id="erEdit" layoutX="460.0" layoutY="165.0" mnemonicParsing="false" onAction="#editReport" prefHeight="38.0" prefWidth="105.0" text="Edit" />
+                  <Button fx:id="erPrint" layoutX="460.0" layoutY="229.0" mnemonicParsing="false" onAction="#printReport" prefHeight="38.0" prefWidth="105.0" text="Print" />
+                  <Button fx:id="erEmail" layoutX="460.0" layoutY="290.0" mnemonicParsing="false" onAction="#emailReport" prefHeight="38.0" prefWidth="105.0" text="Email" />
+                  <Text layoutX="26.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select an existing report to work with:" wrappingWidth="395.7294921875" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

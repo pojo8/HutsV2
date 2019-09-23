@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="205.0" fitWidth="290.0" layoutX="285.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="resources/george.jpeg" />
+         </image>
+      </ImageView>
+      <Ellipse fill="#dfe6e8" layoutX="140.0" layoutY="127.0" radiusX="134.0" radiusY="117.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="32.0" layoutY="43.0" lineSpacing="1.1" prefHeight="167.0" prefWidth="221.0" text="Good afternoon Sir,                       I am calling to let you know you have been selected from our database to receive a cashprize. All I require from you is your  bank account details and sort code and I can wire you the monies directly." wrapText="true" />
+      <TextField layoutX="278.0" layoutY="296.0" prefHeight="25.0" prefWidth="181.0" />
+      <TextField layoutX="278.0" layoutY="369.0" prefHeight="25.0" prefWidth="181.0" />
+      <Text layoutX="78.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank Account Details:" wrappingWidth="147.65234375" />
+      <Text layoutX="106.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sort Code:" wrappingWidth="72.65234375" />
+      <Text layoutX="278.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your cash prize is £82.42" wrappingWidth="181.0" />
+   </children>
+</AnchorPane>

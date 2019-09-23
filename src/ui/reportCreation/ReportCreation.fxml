@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="prof_loss" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.reportCreation.ReportCreationController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="600.0">
+        <items>
+          <Button fx:id="aboutButton" mnemonicParsing="false" onAction="#openAbout" text="About" />
+        </items>
+      </ToolBar>
+      <Label layoutX="165.0" layoutY="83.0" prefHeight="40.0" prefWidth="240.0" text="Select a report type:" />
+      <Button fx:id="order_report" layoutX="51.0" layoutY="175.0" mnemonicParsing="false" onAction="#openOrderReport" prefHeight="40.0" prefWidth="122.0" text="Order Report" />
+      <Button fx:id="profit_loss" layoutX="239.0" layoutY="180.0" mnemonicParsing="false" onAction="#openProfLoss" prefHeight="40.0" prefWidth="122.0" text="profit and loss report">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="trail_report" layoutX="432.0" layoutY="180.0" mnemonicParsing="false" onAction="#openTrailReport" prefHeight="40.0" prefWidth="122.0" text="Trail Report" />
+      <Button fx:id="order_invoice" layoutX="43.0" layoutY="277.0" mnemonicParsing="false" onAction="#openOrderInvoice" prefHeight="40.0" prefWidth="122.0" text="Order Invoice" />
+      <Button fx:id="pay_slip" layoutX="432.0" layoutY="277.0" mnemonicParsing="false" onAction="#openPaySlip" prefHeight="40.0" prefWidth="122.0" text="Pay Slips" />
+      <Button fx:id="death_note" layoutX="239.0" layoutY="277.0" mnemonicParsing="false" onAction="#openDeathNote" prefHeight="40.0" prefWidth="122.0" text="Death Note" />
+   </children>
+</AnchorPane>

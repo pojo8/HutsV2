@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="398.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.orderProcessing.OrderProcessingController">
+   <children>
+      <Label layoutX="57.0" layoutY="26.0" prefHeight="15.0" prefWidth="413.0" text="Select a product from the table to manage current stock levels" />
+      <Button fx:id="reduceInventory" layoutX="282.0" layoutY="330.0" mnemonicParsing="false" onAction="#reduceStock" prefHeight="38.0" prefWidth="124.0" text="Reduce stock" />
+      <Button fx:id="amendInventory" layoutX="414.0" layoutY="330.0" mnemonicParsing="false" onAction="#amendStock" prefHeight="38.0" prefWidth="124.0" text="Amend stock" />
+      <TextField fx:id="alterStock" layoutX="42.0" layoutY="333.0" prefHeight="31.0" prefWidth="236.0" />
+      <Label layoutX="42.0" layoutY="306.0" prefHeight="15.0" prefWidth="236.0" text="Enter an amount to current stock:" />
+      <TableView fx:id="stockViewTable" layoutX="30.0" layoutY="50.0" prefHeight="249.0" prefWidth="499.0">
+         <columns>
+            <TableColumn fx:id="prodColumn" prefWidth="135.0" text="Product " />
+            <TableColumn fx:id="dateColumn" prefWidth="111.0" text="Date ordered" />
+            <TableColumn fx:id="currentStockColumn" minWidth="0.0" prefWidth="129.0" text="Current stock " />
+            <TableColumn fx:id="initialStockColumn" prefWidth="125.0" text="Initial stock " />
+            <TableColumn fx:id="prodIdColumn" prefWidth="125.0" text="PID" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

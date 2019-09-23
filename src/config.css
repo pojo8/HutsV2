@@ -1,0 +1,8 @@
+.error {
+  -fx-control-inner-background: Tomato;
+}
+
+.validate{
+  -fx-control-inner-background: MediumSeaGreen;
+}
+
